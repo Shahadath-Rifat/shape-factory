@@ -11,8 +11,6 @@
     --app-green: #33ab4e;
     --app-purple: #833cff;
     --app-orange: #ff833c;
-    --app-blue: #3c57ff;
-    --app-blue-hover: #364ee6;
     --app-red: #ff3c57;
     --app-red-hover: #ff2846;
     --app-orange-text: #ff8e1c;
@@ -24,7 +22,7 @@
 body {
     background-color: var(--app-dark-bg);
     font-family: Arial, sans-serif;
-    padding-top: 120px;
+    padding-top: 65px;
 }
   
 h1 {
@@ -61,18 +59,7 @@ h1 {
     font-size: 16px;
 }
   
-/*.controls button {
-    background-color: #0f9;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    padding: 10px 20px;
-}
-  
-.controls button:hover {
-    background-color: #09f;
-}*/
- 
+
 option {
     background-color:var(--app-dark-bg);
     color: #fff;
@@ -80,19 +67,33 @@ option {
 
 #shapes {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 20px;
+    grid-template-columns: repeat(5, 150px);
+    grid-template-rows: repeat(5, 110px);
+    grid-gap: 8px;
     margin: 15px auto;
-    height: 450px;
+    height: 478px;
     width: 750px;
     color: #fff;
+    padding: 10px;
     background-color:#3e4653;
 }
 
 .shape {
     border-radius: 50%;
-    height: 100px;
+    height: 40px;
+    width: 40px;
+}
+
+.circle {
     width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.square {
+    border-radius: 7px;
+    width: 100px;
+    height: 100px;
 }
 
 #create {
@@ -110,4 +111,11 @@ option {
 
 #create:hover {
     background-color:var(--app-orange-text);
+}
+
+.shape-text {
+    text-align: center;
+    color: var(--app-white);
+    font-size: 18px;
+    margin-top: 10px;
 }
