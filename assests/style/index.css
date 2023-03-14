@@ -17,10 +17,97 @@
     --app-red-hover: #ff2846;
     --app-orange-text: #ff8e1c;
     --app-light-gray: #f9f9f9;
+    --app-white: #fff;
 }
+
 
 body {
     background-color: var(--app-dark-bg);
+    font-family: Arial, sans-serif;
+    padding-top: 120px;
+}
+  
+h1 {
+    text-align: center;
+    color: var(--app-white);
+    font-size: 35px;
 }
 
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 23px;
+}
+  
+.controls label {
+    margin-right: 11px;
+    color:var(--app-white);
+    font-size: 29px;
+}
+  
+.controls select {
+    margin-right: 10px;
+}
 
+#shape, #color {
+    color: var(--app-white);
+    height: 41px;
+    width: 180px;
+    padding: 10px 10px;
+    margin: 0 30px;
+    border-radius: 5px;
+    background-color:#3e4653;
+    font-size: 16px;
+}
+  
+/*.controls button {
+    background-color: #0f9;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+  
+.controls button:hover {
+    background-color: #09f;
+}*/
+ 
+option {
+    background-color:var(--app-dark-bg);
+    color: #fff;
+}
+
+#shapes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    margin: 15px auto;
+    height: 450px;
+    width: 750px;
+    color: #fff;
+    background-color:#3e4653;
+}
+
+.shape {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+#create {
+    width: 140px;
+    height: 45px;
+    border-radius: 50px;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 26px 30px -10px;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+    background-color:var(--app-orange);
+}
+
+#create:hover {
+    background-color:var(--app-orange-text);
+}
